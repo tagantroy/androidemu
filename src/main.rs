@@ -43,7 +43,7 @@ fn main() -> Result<(), Box<dyn Error>> {
         Some(_) => {
             let emulator_name = env::args().nth(2).expect("Emulator name expected");
             start_emulator(emulator_name)
-        },
+        }
     }
 }
 
