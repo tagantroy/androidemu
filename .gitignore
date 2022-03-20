@@ -1,0 +1,6 @@
+/target
+/workflow/androidemu
+.DS_Store
+.idea/
+my_rust_binary.log
+Cargo.lock
