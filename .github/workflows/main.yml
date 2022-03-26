@@ -77,9 +77,9 @@ jobs:
       - name: Archive
         id: archive
         run: |
-          archive=crates-${{ steps.version.outputs.value }}-${{ matrix.target }}.alfredworkflow
+          archive=androidemu-${{ steps.version.outputs.value }}-${{ matrix.target }}.alfredworkflow
           powerpack package --target ${{ matrix.target }}
-          mv target/workflow/crates.alfredworkflow "$archive"
+          mv target/workflow/androidemu.alfredworkflow "$archive"
           echo "::set-output name=path::$archive"
 
       - uses: softprops/action-gh-release@v1
